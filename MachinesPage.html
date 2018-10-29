@@ -1,0 +1,248 @@
+<!-- MACHINE MAP PAGE -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>News Site</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<!--[if lt IE 9]>
+		<script>
+			document.createElement("article");
+			document.createElement("aside");
+			document.createElement("footer");
+			document.createElement("header");
+			document.createElement("main");
+			document.createElement("nav");
+			document.createElement("section");
+		</script>
+	<![end if]-->
+
+
+	<!--AS DONE BY: https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+	<script src="Javascript/Drop.js"></script>
+
+</head>
+<body>
+	<header class="banner">
+	<!--	<h1>TURING Lab</h1> -->
+		<a href="https://www.transy.edu/">
+			<p class="bannerimage">
+				<img src="images/newTURINGLabLogo.png" height="116" width="310" alt="Transy Logo">
+			</p>
+		</a>
+	</header>
+
+	<nav>
+		<ul>
+			<!--AS DONE BY: https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+			<div class="dropdown">
+			  <button onclick="myFunction()" class="dropbtn">Tech ▼</button>
+			  <div id="myDropdown" class="dropdown-content">
+			    <a href="#">Printers</a><!--CHANGED-->
+			    <a href="#">Robots</a><!--CHANGED-->
+			    <a href="#">Machines</a><!--CHANGED-->
+			  </div>
+			</div>
+
+
+			<li><a href="http://www.cs.transy.edu/wiki/index.php/CS_Lab_Wiki">Wiki</a></li>
+			<li><a href="javascript:;">Lab Map</a></li>
+			<li><a href="test2ish.html">Virtual Tour (n/a)</a></li>
+
+
+
+		</ul>
+	</nav>
+
+	<!-- This is the heading for the machines pages -->
+	<main>
+		<section>
+			<h2 class="header">Lab Machines</h2>
+			<article>
+				<header>
+					<h3 class="subheader">Machine Map</h3>
+				</header>
+				<!-- This is where I will put the image I think? -->
+					<p>
+					<img src="https://imgur.com/a/urhwrFY" height="250" width="250" alt="First Table">
+					</p>
+			</article>
+
+		</section>
+
+		<section>
+			<h2 class="header">Machine Information</h2>
+			<article>
+				<header>
+					<h3 class="subheader">Which machine's specs would you like to view?</h3>
+				</header>
+				<p>
+					Linux machines:
+					<!-- AS DONE BY: https://www.w3schools.com/tags/tag_select.asp -->
+					 <select>
+					 	<option value="default">---</option>
+						<option value="garrett">Garrett</option>
+						<option value="lovelace">Lovelace</option>
+						<option value="goldsine">Goldstine</option>
+						<option value="forsythe">Forsythe</option>
+						<option value="burks">Burks</option>
+						<option value="granville">Granville</option>
+						<option value="clarke">Clarke</option>
+						<option value="winters">Winters</option>
+						<option value="mayer">Mayer</option>
+						<option value="antonelli">Antonelli</option>
+						<option value="lichterman">Lichterman</option>
+						<option value="hopper">Hopper</option>
+					</select> 
+
+					<!-- Button and toggle view AS DONE BY: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show -->
+					<button onclick="displayLinuxInfo()">Select</button>
+					
+					<br>
+						
+					<div id="linuxInfo" style="display:none">
+						Name: 
+						<br>
+						Processor and speed: 
+						<br>
+						Memory:
+						<br>
+						Video:
+						<br>
+						OS Info:
+						<br>
+						Time since boot:
+						<br><br>
+
+						About the Person:
+						<br>
+						stuff
+						<br>
+					</div>
+
+					<script>
+						function displayLinuxInfo() {
+						    var x = document.getElementById("linuxInfo");
+						    if (x.style.display === "none") {
+						        x.style.display = "block";
+						    } else {
+						        x.style.display = "block";
+						    }
+						}
+					</script>
+
+					<br>
+				</p>
+
+				<p>
+					MacOS machines:
+					<!-- AS DONE BY: https://www.w3schools.com/tags/tag_select.asp -->
+					 <select>
+					 	<option value="default">---</option>
+					 	<option value="hoover">Hoover</option>
+						<option value="holberton">Holberton</option>
+						<option value="borg">Borg</option>
+						<option value="bartik">Bartik</option>
+						<option value="morello">Morello</option>
+						<option value="calvin">Calvin</option>
+						<option value="allen">Allen</option>
+						<option value="lamarr">Lamarr</option>
+						<option value="spence">Spence</option>
+						<option value="klawe">Klawe</option>
+					</select> 
+
+					<button onclick="displayMacOSInfo()">Select</button>
+					
+					<br>
+						
+					<div id="macOSInfo" style="display:none">
+						Name: 
+						<br>
+						Processor and speed: 
+						<br>
+						Memory:
+						<br>
+						Video:
+						<br>
+						OS Info:
+						<br>
+						Time since boot:
+						<br><br>
+
+						About the Person:
+						<br>
+						stuff
+						<br>
+					</div>
+
+					<script>
+						function displayMacOSInfo() {
+						    var x = document.getElementById("macOSInfo");
+						    if (x.style.display === "none") {
+						        x.style.display = "block";
+						    } else {
+						        x.style.display = "block";
+						    }
+						}
+					</script>
+
+					<br>
+				</p>
+
+			</article>
+		</section>
+	</main>
+
+	<aside>
+		<h2 class="header">Interested in Learning More About TU CS?</h2>
+		<p>
+			<a href="http://www.transy.edu/academics/programs/computer-science" class="hyperlink" >Learn More About the Major!</a>
+		</p>
+		<p>Contact Us! *email*</p>
+	</aside>
+
+	<aside class="sampleImage">
+		<p>
+			<img src="images/smplTree.jpg" height="250" width="250" alt="Sample Image">
+		</p>
+	</aside>
+
+	<footer>
+		<table class=sitemap>
+		  <tr>
+		    <th>Sitemap</th>
+		    <th class="resources">Resources</th>
+		    <th>Contact</th>
+		  </tr>
+		  <tr>
+		    <td><a href=# class="SMLink">Printers</a></td>
+		    <td><a href=# class="SMLink">FAQ</a></td>
+		    <td rowspan="2">*mailing address line 1*<br>*mailing address line 2*</td>
+		  </tr>
+		  <tr>
+		    <td><a href=# class="SMLink">Robots</a></td>
+		    <td><a href=# class="SMLink">Wiki</a></td>
+		  </tr>
+		  <tr>
+		    <td><a href=# class="SMLink">Machines</a></td>
+		    <td></td>
+		    <td>Phone:(859)233-8228</td>
+		  </tr>
+		  <tr>
+		    <td><a href=# class="SMLink">Lab Map</a></td>
+		    <td></td>
+		    <td>*email*</td>
+		  </tr>
+		  <tr>
+		    <td><a href=# class="SMLink">Virtual Tour</a></td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		</table>
+	</footer>
+
+
+</body>
+</html>
