@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Made w the help of tutor4u's tutorial
+		 on youtube:
+		 https://youtu.be/9gTw2EDkaDQ -->
+	<title>Printers - TURING Lab</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styleInfoPage.css">
+	<!--[if lt IE 9]>
+		<script>
+			document.createElement("article");
+			document.createElement("aside");
+			document.createElement("footer");
+			document.createElement("header");
+			document.createElement("main");
+			document.createElement("nav");
+			document.createElement("section");
+		</script>
+	<![end if]-->
+
+
+	<!--AS DONE BY: https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+	<script src="Javascript/Drop.js"></script>
+</head>
+<body>
+	<header class="banner">
+	<!--	<h1>TURING Lab</h1> -->
+		<a href="Homepage.html">
+			<p class="bannerimage">
+				<img src="images/TURINGLabLogo.png" height="116" width="310" alt="Transy Logo">
+			</p>
+		</a>
+	</header>
+
+	<nav style="text-align: center;">
+		<!-- <ul style="text-align: center;"> -->
+			<!--AS DONE BY: https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+			<div class="dropdown">
+			  <button onclick="myFunction()" class="dropbtn">Tech &#x25BE;</button>
+			  <div id="myDropdown" class="dropdown-content">
+			    <a href="Printers.html">Printers</a>
+			    <a href="Robots.html">Robots</a>
+			    <a href="Machines.html">Machines</a>
+			  </div>
+			</div>
+
+			<div class="dropdown">
+			  <button onclick="myFunctionb()" class="dropbtnb">Resources &#x25BE;</button>
+			  <div id="myDropdownb" class="dropdown-contentb">
+			    <a href="http://www.cs.transy.edu/wiki/index.php/CS_Lab_Wiki">Wiki</a>
+			    <a href="FAQ.html">FAQs</a>
+			  </div>
+			</div>
+
+			<div class="dropdown">
+				<!-- <button class="dropbtn"><a href="Tour.html">Virtual Tour</a></button> -->
+				<button class="dropbtn">Virtual Tour</button>
+			</div>
+		<!-- </ul> -->
+	</nav>
+
+
+<div style="text-align: center">
+	<main style="display: inline-block">
+
+		<section class="pageHeader" style="display: inline-block">
+			<h2>Printers</h2>
+			<p style="text-align: left">
+				The TURING Lab currently has four 3D printers, with plenty of scanning equipment and supplies for students to create 3D models of pretty much whatever they want. The lab has equipment to scan in existing models, such as an XBox Kinect for scanning humans. The printers are accesible to any Transy student who posesses the willingness to learn how to use the equipment and obtains the permission of Dr. Moorman.
+			</p>
+		</section>
+
+		<section class="unit" style="display: inline-block">
+			<h3>Ultimaker 2 3D Printer</h3>
+			<p>
+					The Ultimaker 2 uses an open filament system, allowing for printing in many different materials. The TURING Lab has a supply of PLA filament in a variety of colors. It can print models up to 223 mm wide and 205 mm tall, and is a great printer to begin to learn the basics of 3D printing.
+			</p>
+		</section>
+		<p style="text-align: center">
+		<img class="image" src="Images/Ultimaker2.jpg" alt="Ultimaker 2 3D Printer">
+		</p>
+
+		<section class="unit" style="display: inline-block">
+			<h3>Makerbot Replicator 2x 3D Printer</h3>
+			<p>
+					Gamera is a turtlebot from AutonmousAI. It has an ASUS RGB-D camera, a nice 192 core processor, and a Roomba-like base. It also is fully integrated into the ROS environment.
+			</p>
+		</section>
+		<p style="text-align: center">
+		<img class="image" src="Images/MBReplicator2x.jpg" alt="Makerbot Replicator 2x 3D Printer">
+		</p>
+
+		<section class="unit" style="display: inline-block">
+			<h3>Makerbot Replicator 5th Gen 3D Printer</h3>
+			<p>
+					The Makerbot Replicator 5th Generation can print models up to 25.2 x 19.9 x 15.0 cm with 100 microns of resolution. It uses PLA filament for printing.
+			</p>
+		</section>
+		<p style="text-align: center">
+		<img class="image" src="Images/MBReplicator.jpg" alt="Makerbot Replicator 5th Gen 3D Printer">
+		</p>
+
+		<section class="unit" style="display: inline-block">
+			<h3>3DSystems Projet 460 Printer</h3>
+			<p>
+					Unlike the other 3D printers in the lab, the Project 460 printer prints using sediment. It sculpts layers of sediment in to full-color 3D models, which is heated up and hardened inside the printer.
+			</p>
+		</section>
+		<p style="text-align: center">
+		<img class="image" src="Images/3DSProject460.jpg" alt="3D Systems Project 460 Printer">
+		</p>
+
+		<section class="unit" style="display: inline-block">
+			<h3>3D Printing Equipment</h3>
+			<p>
+					3D printers require plenty of additional hardware to make detailed models. The lab has an XBox Kinect to scan humans.
+			</p>
+		</section>
+		<p style="text-align: center">
+		<img class="image" src="Images/XBoxKinect.jpg" alt="XBox Kinect.">
+		</p>
+
+	</main>
+</div>
+
+
+  	<footer>
+  			<table class="sitemap">
+  	  <tr>
+  	    <th>Site Map</th>
+  	    <th class="resources">Resources</th>
+  	    <th>Contact</th>
+  	  </tr>
+  	  <tr>
+  	    <td><a href="Printers.html" class="SMLink">Printers</a></td>
+  	    <td><a href="FAQs.html" class="SMLink">FAQ</a></td>
+  	    <td rowspan="3">Kenny Moorman<br>300 North Broadway<br>Lexington, KY 40508</td>
+  	  </tr>
+  	  <tr>
+  	    <td><a href="Robots.html" class="SMLink">Robots</a></td>
+  	    <td><a href= "http://www.cs.transy.edu/wiki/index.php/CS_Lab_Wiki" class="SMLink">Wiki</a></td>
+  	  </tr>
+  	  <tr>
+  	    <td><a href="Machines.html" class="SMLink">Machines</a></td>
+  	    <td></td>
+  	  </tr>
+  	  <tr>
+  	    <td><a href="Tour.html" class="SMLink">Virtual Tour</a></td>
+  	    <td></td>
+  	    <td>Phone: (859)233-8228</td>
+  	  </tr>
+  		<tr>
+  			<td></td>
+  			<td></td>
+  			<td>Email: cslab@transy.edu</td>
+  	</table>
+  		</footer>
+
+  		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html>

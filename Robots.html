@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Made w the help of tutor4u's tutorial
+		 on youtube:
+		 https://youtu.be/9gTw2EDkaDQ -->
+	<title>Robots - TURING Lab</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styleInfoPage.css">
+	<!--[if lt IE 9]>
+		<script>
+			document.createElement("article");
+			document.createElement("aside");
+			document.createElement("footer");
+			document.createElement("header");
+			document.createElement("main");
+			document.createElement("nav");
+			document.createElement("section");
+		</script>
+	<![end if]-->
+
+
+	<!--AS DONE BY: https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+	<script src="Javascript/Drop.js"></script>
+</head>
+<body>
+	<header class="banner">
+	<!--	<h1>TURING Lab</h1> -->
+		<a href="Homepage.html">
+			<p class="bannerimage">
+				<img src="images/TURINGLabLogo.png" height="116" width="310" alt="Transy Logo">
+			</p>
+		</a>
+	</header>
+
+	<nav style="text-align: center;">
+		<!-- <ul style="text-align: center;"> -->
+			<!--AS DONE BY: https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+			<div class="dropdown">
+			  <button onclick="myFunction()" class="dropbtn">Tech &#x25BE;</button>
+			  <div id="myDropdown" class="dropdown-content">
+			    <a href="Printers.html">Printers</a>
+			    <a href="Robots.html">Robots</a>
+			    <a href="Machines.html">Machines</a>
+			  </div>
+			</div>
+
+			<div class="dropdown">
+			  <button onclick="myFunctionb()" class="dropbtnb">Resources &#x25BE;</button>
+			  <div id="myDropdownb" class="dropdown-contentb">
+			    <a href="http://www.cs.transy.edu/wiki/index.php/CS_Lab_Wiki">Wiki</a>
+			    <a href="FAQ.html">FAQs</a>
+			  </div>
+			</div>
+
+			<div class="dropdown">
+				<!-- <button class="dropbtn"><a href="Tour.html">Virtual Tour</a></button> -->
+				<button class="dropbtn">Virtual Tour</button>
+			</div>
+		<!-- </ul> -->
+	</nav>
+
+
+<div style="text-align: center">
+	<main style="display: inline-block">
+		<section class="pageHeader" style="display: inline-block">
+			<h2>Robots</h2>
+			<p style="text-align: left">
+				The TURING Lab currently has 5 robots available to students. In addition to the robts, students have access to Lego Mindstorm EV3 robot kits. CS students have the opportunity to learn more about the field of robotics through the Robotics course offered during May Term.
+			</p>
+		</section>
+		<section class="unit" style="display: inline-block">
+			<h3>GROVER</h3>
+			<p>
+					The oldest robot in the Horde. A B12 from the mid-90s, equipped with 12 sonar sensors, odometry sensors, and a nice synchro-drive system. Currently, GROVER also has a Kinect sensor, a laser range finder, and a camera on-board.
+			</p>
+		</section>
+		<p style="text-align: center">
+		<img class="image" src="Images/Grover.jpg" alt="Robot Grover">
+		</p>
+
+		<section class="unit" style="display: inline-block">
+			<h3>Gamera</h3>
+			<p>
+					Gamera is a turtlebot from AutonmousAI. It has an ASUS RGB-D camera, a nice 192 core processor, and a Roomba-like base. It also is fully integrated into the ROS environment. A fully functional Nerf Rhino-Fire gun has been added for offensive capabilities.
+			</p>
+		</section>
+		<p style="text-align: center">
+		<img class="image" src="Images/Gamera.jpg" alt="Robot Gamera">
+		</p>
+
+		<section class="unit" style="display: inline-block">
+			<h3>Bosch</h3>
+			<p>
+					A Sony AIBO ERS7 dog.
+			</p>
+		</section>
+		<p style="text-align: center">
+		<img class="image" src="Images/Bosch.jpg" alt="Robot Gamera">
+		</p>
+
+		<section class="unit" style="display: inline-block">
+			<h3>Lego Mindstorms EV3</h3>
+			<p>
+					The lab has several Lego Mindstorms EV3 kits for students to use. These offer a good introduction to the principles of robotics, and can be pieced together and programmed to perform virtually infinite tasks.
+			</p>
+		</section>
+		<p style="text-align: center">
+		<img class="image" src="Images/LegoEV3.jpg" alt="Lego Mindstorms EV3 Kits">
+		</p>
+
+	</main>
+</div>
+
+
+  	<footer>
+  			<table class="sitemap">
+  	  <tr>
+  	    <th>Site Map</th>
+  	    <th class="resources">Resources</th>
+  	    <th>Contact</th>
+  	  </tr>
+  	  <tr>
+  	    <td><a href="Printers.html" class="SMLink">Printers</a></td>
+  	    <td><a href="FAQs.html" class="SMLink">FAQ</a></td>
+  	    <td rowspan="3">Kenny Moorman<br>300 North Broadway<br>Lexington, KY 40508</td>
+  	  </tr>
+  	  <tr>
+  	    <td><a href="Robots.html" class="SMLink">Robots</a></td>
+  	    <td><a href= "http://www.cs.transy.edu/wiki/index.php/CS_Lab_Wiki" class="SMLink">Wiki</a></td>
+  	  </tr>
+  	  <tr>
+  	    <td><a href="Machines.html" class="SMLink">Machines</a></td>
+  	    <td></td>
+  	  </tr>
+  	  <tr>
+  	    <td><a href="Tour.html" class="SMLink">Virtual Tour</a></td>
+  	    <td></td>
+  	    <td>Phone: (859)233-8228</td>
+  	  </tr>
+  		<tr>
+  			<td></td>
+  			<td></td>
+  			<td>Email: cslab@transy.edu</td>
+  	</table>
+  		</footer>
+
+  		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html>
